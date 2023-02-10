@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+}
+
+
+p{
+    color: white;
+}
+
+header{
+    display:flex;
+    text-align: left;
+    text-justify: center;
+    height:10vh;
+}
+main{
+    display:flex;
+    background-image: url(/img/Pancake.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: left;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 20px;
+}
+
+.maincontainer h2, p, a{
+    color: white;
+    letter-spacing: 0px;
+    font-family: 'Open Sans';
+
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.maincontainer h2{
+    font-size: 29px;
+    font-weight: 300;
+}
+
+.mainbuttons{
+    display:flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.mainbutton{
+    justify-self: center;
+    border: rgba(255, 255, 255, 0.5) solid 2px;
+    border-radius: 4px;
+    text-align: center;
+    text-justify:center;
+    width: fit-content;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.mainbutton a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.mainbutton:hover{
+    animation: 0.5s hover;
+}
+
+
+
+.webpagefooter{
+    background-color: rgb(17,25,36);
+    color:white;
+    height: 10vh;
+}
+
+.webpagefooter table{
+    width:100%;
+    height:100%;
+}
+
+    
