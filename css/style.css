@@ -1,6 +1,7 @@
 html{
     height: 100vh;
     width: 100vw; 
+    border: 1px black solid;
 }
 
 body{
@@ -16,7 +17,29 @@ p{
 
 }
 
+
+/* Hamburger menu classes */
+.showMenu {
+    transform: translateY(0);
+    opacity: 50%;
+  }
+ .menu {
+    position: fixed;
+    transform: translateY(50%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+
 header{
+    width:100vw;
     background-color: rgb(9, 13, 35);
     display:flex;
     text-align: left;
@@ -31,6 +54,7 @@ header h1{
 
 }
 
+/* mobile only */
 @media only screen and (max-width: 480px){
     nav{
         display: none;
@@ -40,6 +64,21 @@ header h1{
     flex-direction: column;
     align-content: space-around;
    }
+   footer{
+    opacity: 0%;
+   }
+   #tripadvisor{
+    visibility: hidden;
+   }
+   #tfnumber{
+    visibility:hidden;
+    height:0px;
+   }
+}
+@media screen and (min-width: 350px) {
+    .title:after {
+        content: 'Pankakor';
+    }
 }
 
 
@@ -50,35 +89,42 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
-    'pancakeimage'
     'maincontent'
     'campaign'
+    'pancakeimage'
     ;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: fit-content;
     text-align: left;
     justify-content: center;
     height: 90vh;
     padding-top: 20px;
+    margin-top: 20%;
 }
 
+.certificate{
+    padding-left:25%;
+}
 
 #pancakeimage{
-    grid-area: "pancakeimage";
-    height: 1fr;
-    width: 1fr;
+    height: fit-content;
+    width: 100vw;
 }
 #maininfo{
     grid-area: "maincontent";
 }
 
-#slogan{
+#erbjudande{
     grid-area: "campaign";
+    text-align: center;
 }
 
+#pankaka{
+    width:100%;
+}
 
-.hamburger_button{
+.hamburger{
 height: 100%;
 }
 
@@ -101,13 +147,6 @@ height: 100%;
 .maincontainer h2{
     font-size: clamp(10px, auto, 25px);
     font-weight: 300;
-}
-
-.mainbuttoncontainer{
-    grid-area: "buttons";
-    display:flex;
-    justify-content: space-around;
-    width: 50%;
 }
 
 .mainbutton{

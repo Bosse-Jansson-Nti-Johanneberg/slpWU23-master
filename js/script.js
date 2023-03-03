@@ -1,9 +1,8 @@
-let hamburger_button = document.querySelector(".hamburger_button");
-let hamburger_menu = document.querySelector(".hamburger_menu");
+let hamburger = document.getElementsByClassName("hamburger")[0];
+let menu = document.getElementsByClassName("menu");
 
+function openMenu(){
+    menu.toggleClass(showmenu);
+}   
 
-hamburger_button.addEventListener("click, openMenu");
-
-function openMenu();
-hamburger_menu.display = flex; 
-hamburger_menu.style.animation="openMenu 2s linear";
+hamburger.addEventListener("click", openMenu);
