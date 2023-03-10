@@ -16,29 +16,37 @@ h2{
 p{
 
 }
+a{
+    text-decoration: none;
+    color:black;
+    border-bottom: dotted black;
+}
 
 
 /* Hamburger menu classes */
-.showMenu {
-    transform: translateY(0);
-    opacity: 50%;
-  }
+
  .menu {
+    display:flex;
+    flex-direction: column;
+    width:100vw;
+    height:fit-content;
+    text-align: center;
     position: fixed;
-    transform: translateY(50%);
-    transition: transform 0.2s;
-    top: 0;
+    top: -100%;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 99;
-    background: black;
+    z-index: 1;
     color: white;
     list-style: none;
     padding-top: 4rem;
   }
+.menu p{
+    font-size: 320px;
+  }
 
 header{
+    z-index: 5;
     width:100vw;
     background-color: rgb(9, 13, 35);
     display:flex;
@@ -57,7 +65,8 @@ header h1{
 /* mobile only */
 @media only screen and (max-width: 480px){
     nav{
-        display: none;
+        opacity: 50%;
+        height:fit-content;
     }
    main{
     gap: 30px;
@@ -82,6 +91,19 @@ header h1{
 }
 
 
+.show{
+    opacity:100%;
+    animation: menuOpening linear 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menuOpening{
+    100%{
+        top: 50px;
+        background: white;
+    }
+}
+
 
 
 main{
@@ -103,6 +125,10 @@ main{
     margin-top: 20%;
 }
 
+.restaurant_guru{
+    z-index: 0;
+}
+
 .certificate{
     padding-left:25%;
 }
@@ -121,7 +147,7 @@ main{
 }
 
 #pankaka{
-    width:100%;
+    width:100vw;
 }
 
 .hamburger{
@@ -130,7 +156,7 @@ height: 100%;
 
 .maincontainer{
     display: grid;
-    grid-template-areas: 'contactinfo' 'description' 'buttons'
+    grid-template-areas:  'description' 'contactinfo' 'buttons'
 }
 
 .maincontainer article{

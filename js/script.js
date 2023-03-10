@@ -1,8 +1,16 @@
-let hamburger = document.getElementsByClassName("hamburger")[0];
-let menu = document.getElementsByClassName("menu");
+document.addEventListener("DOMContentLoaded", () => {
+    // --- The navigation --- //
+    let button = document.querySelector("i");
+    let menu = document.querySelector("nav");
+    let certificate = document.querySelector("certificate");
 
-function openMenu(){
-    menu.toggleClass(showmenu);
-}   
+    button.addEventListener("click", show);
 
-hamburger.addEventListener("click", openMenu);
+    function show() {
+        console.log("funkar");
+        menu.classList.toggle("show");
+        certificate.visibility = "hidden";
+    }
+});
+
+

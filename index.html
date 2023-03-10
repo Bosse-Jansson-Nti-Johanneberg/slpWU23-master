@@ -5,11 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurangen för dig som gillar pankakor, dygnet runt.">
     <title>Ericks Pankakor</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <nav class="menu">
+        <a href="founders.html"> <h3>Grundarna Erik och Eric</h3></a>
+        <a href="Kalas.html"> <h3>Kalas och fester</h3></a>
+        <a href="Bokningar.html"><h3> Boka ett bord</h3></a>
+    </nav>
     <header class="webpageheader">
         <h1 class="title"> Ericks&nbsp;</h1>
         <script>
@@ -22,39 +28,14 @@
                 }
             });
         </script>
-        <button class="hamburger"> Hamburgar</button>
-    </header>
-    <div class="menu showmenu">
-        <h1> This is a menu item</h1>
-    </div>
-    <nav class="navigation">
-        <a href="[page1]"> Meny</a>
-        <a href="[page2]"> Om oss</a>
-        <a href="[page3]"> Bokningar</a>
-    </nav>
+    <button class="menu-btn-toggle">
+        <i class="material-icons">menu</i>
+    </button>
+    </header> 
     <main class="webpagemain">
-        </article>
         <article class="maincontainer">
             <h2 id="tfnumber"> Ericks pankakor, 072-506 62 62</h2>
-            <div class="certificate">
-                <link class="restaurant_guru" href="https://awards.infcdn.net/transparent_v2.css" rel="stylesheet" />
-                <div id="rest_white" data="29" class="rest_black"
-                    onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.rest-white_center').href);return 0;}">
-                    <div class="rest-white_year">2023</div> <a
-                        href="https://restaurantguru.com/Ericks-Pankakor-Gothenburg" class="rest-white_center fz15"
-                        target="_blank">Ericks Pankakor</a>
-                    <div class="rest_white_arc-heading"> <svg xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"
-                            viewBox="0 0 140 140">
-                            <defs>
-                                <path id="rest_white_subheading-arc" d="M 12 70 a 58 58 0 0 0 116 0"></path>
-                            </defs> <text class="heading__subheading " fill="#fff" text-anchor="middle">
-                                <textPath startOffset="50%" xlink:href="#rest_white_subheading-arc">Restaurant Guru •
-                                    Recommended</textPath>
-                            </text>
-                        </svg> </div>
-                </div>
-            </div>
+           
             <p> Dagens pankaka, fester och kalas, 07-22</p>
             <div id="erbjudande">
                 <h2> En upplevelse värd att dela</h2>
@@ -62,6 +43,25 @@
                         50%&nbsp;rabatt </span> på valfri pankaka </p>
             </div>
         </article>
+        <div class="certificate">
+            <link class="restaurant_guru" id="guru" href="https://awards.infcdn.net/transparent_v2.css" rel="stylesheet" />
+            <div id="rest_white" data="29" class="rest_black"
+                onclick="if(event.target.nodeName.toLowerCase() != 'a') {window.open(this.querySelector('.rest-white_center').href);return 0;}">
+                <div class="rest-white_year">2023</div> <a
+                    href="https://restaurantguru.com/Ericks-Pankakor-Gothenburg" class="rest-white_center fz15"
+                    target="_blank">Ericks Pankakor</a>
+                <div class="rest_white_arc-heading"> <svg xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="140px"
+                        viewBox="0 0 140 140">
+                        <defs>
+                            <path id="rest_white_subheading-arc" d="M 12 70 a 58 58 0 0 0 116 0"></path>
+                        </defs> <text class="heading__subheading " fill="#fff" text-anchor="middle">
+                            <textPath startOffset="50%" xlink:href="#rest_white_subheading-arc">Restaurant Guru •
+                                Recommended</textPath>
+                        </text>
+                    </svg> </div>
+            </div>
+        </div>
         <article id="pancakeimage">
             <img id="pankaka" src="https://cdn.discordapp.com/attachments/933365296822095893/1049349162887557120/Pandavid.png" alt="image_of_pancake">
         </article>
@@ -76,7 +76,6 @@
             </tr>
         </table>
     </footer>
-
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 </html>
