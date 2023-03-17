@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurangen för dig som gillar pankakor, dygnet runt.">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Om ericks pankakor</title>
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="OmOss.html">
+            <h3>Grundarna Erik och Eric</h3>
+        </a>
+        <a href="Kalas.html">
+            <h3>Kalas och fester</h3>
+        </a>
+        <a href="Bokningar.html">
+            <h3> Boka ett bord</h3>
+        </a>
+    </nav>
+    <header class="webpageheader">
+        <h1 class="title"> Ericks&nbsp;</h1>
+        <script>
+            window.addEventListener('resize', function () {
+                var text = document.getElementsByClassName('title');
+                if (window.innerWidth <= 350) {
+                    text = 'Small viewport text';
+                } else {
+                    text = 'Large viewport text';
+                }
+            });
+        </script>
+        <button class="menu-btn-toggle">
+            <i class="material-icons"> </i>
+        </button>
+    </header>
+    <main class="omoss">
+        <article class="aboutcard" id="founders">
+            <h2> Grundarna: Erik och Eric</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea, id in voluptatum amet atque omnis
+                consequuntur velit eius vitae!</p>
+        </article>
+        <article class="aboutcard" id="eric_Card">
+            <h3>Eric Floberg Ljungqvist</h3>
+            <br>
+            <p> Eric Floberg Ljungqvist hade den genialiska idéen för ericks pankakor år 2022 med sin goda vän Erik
+                Gustafsson. De båda beslöt sig att grunda Ericks pankakor som ett gemensamt projekt.</p>
+        </article>
+        <article class="aboutcard" id="erik_Card">
+            <h3> Erik Gustafsson </h3>
+            <br>
+            <p> Även fast Erik ägde en pankaks restaurang och skapade det recept som alla älskar har han aldrig lagat
+                pankakor hemma. I en intervju svarade Erik: "Jag gillar inte pankakor särskilt mycket egentligen"</p>
+            <br>
+        </article>
+        <article class="aboutcard" id="restaurant">
+            <h2> Om restaurangen</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni incidunt saepe natus dicta dolorum
+                laborum officia, doloremque modi quo corrupti.</p>
+        </article>
+        <article class="aboutcard">
+            <h3> Restaurangen</h3>
+            <p> Den första restaurangen låg utanför NTI Johannebergs gymnasiet. Erik och Eric ville att ungdomarna där
+                skulle äta på ericks pankakor på lunchen, deras önskan gick i uppfyllelse.</p>
+        </article>
+        <article class="aboutcard">
+            <h3> Vad nu?</h3>
+            <p> Nu riktar sig Erik och Eric utåt. De har planer att öppna flera restauranger i andra svenska städer som
+                Malmö och Stockholm, men även utomlands som i Frankfurt.</p>
+        </article>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
