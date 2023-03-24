@@ -10,6 +10,13 @@ body {
     overflow-x: hidden;
 }
 
+#aboutpage{
+    -ms-overflow-style: none;
+     scrollbar-width: none;
+}
+#aboutpage::-webkit-scrollbar{
+    display:none;
+}
 /*Text things */
 h2 {
     font-size: clamp(10px, 24px, 50px);
@@ -18,9 +25,6 @@ h2 {
 p {}
 
 a {
-    text-decoration: none;
-    color: black;
-    border-bottom: dotted black;
 }
 
 
@@ -48,21 +52,32 @@ a {
 }
 
 header {
-    z-index: 5;
+    display:flex;
+    z-index: 0;
     width: 100vw;
     background-color: rgb(9, 13, 35);
-    display: flex;
     text-align: left;
-    text-justify: center;
     height: 10vh;
     justify-content: space-between;
     align-items: center;
 }
+.header-nav{
+    justify-self: right;
+    padding-right: 20px;
+}
+.header-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header-link:hover {
+        text-decoration: underline;
+  }
 
 header h1 {
     color: white;
     font-size: clamp(10px, 32px, 50px);
-
 }
 
 /* mobile only */
@@ -88,6 +103,16 @@ header h1 {
     #tfnumber {
         visibility: hidden;
         height: 0px;
+    }
+    .menu-btn-toggle {
+        opacity:100%;
+    }
+    #aboutpage{
+        -ms-overflow-style: auto;
+         scrollbar-width: auto;
+    }
+    #aboutpage::-webkit-scrollbar{
+        display:inline;
     }
 }
 
@@ -116,10 +141,10 @@ header h1 {
 .webpagemain {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
     grid-template-areas:
+        'certificate'
         'maincontent'
-        'campaign'
         'pancakeimage'
     ;
     background-size: 100% auto;
@@ -135,6 +160,8 @@ header h1 {
 }
 
 .certificate {
+    margin-top: 5%;
+    grid-area: certificate;
     width: fit-content;
     justify-self: center;
 }
@@ -146,11 +173,14 @@ header h1 {
 
 #maininfo {
     grid-area: maincontent;
+    height:fit-content;
 }
 
 #erbjudande {
-    grid-area: "ampaign;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #pankaka {
@@ -160,12 +190,9 @@ header h1 {
 .menu-btn-toggle {
     height: 100%;
     width: 8vw;
+    opacity:0%;
 }
 
-.maincontainer {
-    display: grid;
-    grid-template-areas: 'description' 'contactinfo' 'buttons'
-}
 
 .maincontainer article {
     margin: 15px 0px;
@@ -190,7 +217,6 @@ a {
     border: rgb(0, 0, 0) solid 2px;
     border-radius: 4px;
     text-align: center;
-    text-justify: center;
     width: fit-content;
     padding-left: 8px;
     padding-right: 8px;
@@ -227,7 +253,7 @@ a {
     height: fit-content;
     width: 100vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
     grid-template-areas:
         'founders founders'
         'erik eric'
@@ -236,9 +262,10 @@ a {
 }
 
 .aboutcard {
-    height: 1fr;
     width: 50vw;
-    border: 1px black solid;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #founders {
@@ -254,11 +281,20 @@ a {
 }
 
 #erik_Card {
+
     grid-area: erik;
+}
+#erikbild{
+    width:25%;
+    height:auto;
 }
 
 #eric_Card {
     grid-area: eric;
+}
+#ericbild{
+    width:25%;
+    height:auto;
 }
 
 #restaurang {

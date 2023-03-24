@@ -11,7 +11,7 @@
     <title>Om ericks pankakor</title>
 </head>
 
-<body>
+<body id="aboutpage">
     <nav class="menu">
         <a href="OmOss.html">
             <h3>Grundarna Erik och Eric</h3>
@@ -25,46 +25,41 @@
     </nav>
     <header class="webpageheader">
         <h1 class="title"> Ericks&nbsp;</h1>
-        <script>
-            window.addEventListener('resize', function () {
-                var text = document.getElementsByClassName('title');
-                if (window.innerWidth <= 350) {
-                    text = 'Small viewport text';
-                } else {
-                    text = 'Large viewport text';
-                }
-            });
-        </script>
-        <button class="menu-btn-toggle">
-            <i class="material-icons"> </i>
-        </button>
-    </header>
+        <div class="header-nav">
+            <a class="header-link" href="index.html">Hem</a>
+            <a class="header-link" href="boka.html">Boka ett bord</a>
+            <a class="header-link" href="KalasOchFester.html">Kalas och fester</a>
+            <a class="header-link" href="gear.html">TBD</a>
+        </div>
+    <button class="menu-btn-toggle">
+        <i class="material-icons"> Menu </i>
+    </button>
+    </header> 
     <main class="omoss">
         <article class="aboutcard" id="founders">
             <h2> Grundarna: Erik och Eric</h2>
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ea, id in voluptatum amet atque omnis
-                consequuntur velit eius vitae!</p>
+            <p> Erik och Eric träffades för första gången på NTI Johanneberg. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, qui aut dignissimos, perferendis ipsam asperiores, enim tempore sunt ipsa quam ullam ut iste ab! Itaque.</p>
         </article>
         <article class="aboutcard" id="eric_Card">
-            <h3>Eric Floberg Ljungqvist</h3>
+            <h3>Eric Floberg Ljungqvist</h3> <img src="img/eric.jpg" alt="Eric_Floberg_Ljungqvist" id="ericbild">
             <br>
             <p> Eric Floberg Ljungqvist hade den genialiska idéen för ericks pankakor år 2022 med sin goda vän Erik
-                Gustafsson. De båda beslöt sig att grunda Ericks pankakor som ett gemensamt projekt.</p>
+                Gustafsson. De båda beslöt sig för att grunda Ericks pankakor som ett gemensamt projekt.</p>
         </article>
         <article class="aboutcard" id="erik_Card">
-            <h3> Erik Gustafsson </h3>
+            <h3> Erik Gustafsson </h3> <img src="img/erik.jpg" alt="Erik_Gustafsson" id="erikbild">
             <br>
             <p> Även fast Erik ägde en pankaks restaurang och skapade det recept som alla älskar har han aldrig lagat
                 pankakor hemma. I en intervju svarade Erik: "Jag gillar inte pankakor särskilt mycket egentligen"</p>
             <br>
         </article>
         <article class="aboutcard" id="restaurant">
-            <h2> Om restaurangen</h2>
+            <h2> Om restaurangen</h2> 
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni incidunt saepe natus dicta dolorum
                 laborum officia, doloremque modi quo corrupti.</p>
         </article>
         <article class="aboutcard">
-            <h3> Restaurangen</h3>
+            <h3> Restaurangen i Johanneberg</h3>
             <p> Den första restaurangen låg utanför NTI Johannebergs gymnasiet. Erik och Eric ville att ungdomarna där
                 skulle äta på ericks pankakor på lunchen, deras önskan gick i uppfyllelse.</p>
         </article>
@@ -74,7 +69,16 @@
                 Malmö och Stockholm, men även utomlands som i Frankfurt.</p>
         </article>
     </main>
-
+    <footer class="webpagefooter">
+        <table>
+            <tr>
+                <td> Web Designer</td>
+                <td> Bosse Jansson</td>
+                <td> 073-527 34 04</td>
+                <td> BosseBJansson@gmail.com</td>
+            </tr>
+        </table>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 
