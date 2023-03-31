@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="webpageheader">
+        <h1 class="title"> Ericks&nbsp;</h1>
+        <div class="header-nav">
+            <a class="header-link" href="index.html">Hem</a>
+            <a class="header-link" href="OmOss.html">Om Oss</a>
+            <a class="header-link" href="KalasOchFester.html">Kalas och fester</a>
+        </div>
+        </button>
+        <div class="Hamburger">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <ul>
+                        <li><a href='index.html'>Hem</a></li>
+                        <li><a href='OmOss.html'>Om oss</a></li>
+                        <li><a href='boka.html'>Boka ett bord</a></li>
+                        <li><a href='kalasochfester.html'>Kalas och fester</a></li>
+                    </ul>
+                </div>
+            </div>  
+        </div>
+    </header>
+    <div class="bookcontainer">
+        <form class="bookform">
+            <label for="fnamn">
+                Förnamn
+                <input type="text" id="fnamn" name="fnamn" placeholder="Förnamn" value="">
+            </label>
+
+
+            <label for="enamn">
+                Efternamn
+                <input type="text" id="enamn" name="enamn" placeholder="Efternamn" value="">
+            </label>
+
+            <label for="personer">
+                Antal personer
+                <input type="number" id="personer" name="persons" placeholder="" value="">
+            </label>
+
+            <label for="tid">
+                Tid
+                <input type="time" id="tid" name="tid">
+            </label>
+
+            <label for="datum">
+                Datum
+                <input type="date" id="datum" name="datum" value="">
+            </label>
+
+            <label for="tfnummer">
+                 Telefonnummer
+            <input type="tel" id="tfnummer" name="phone">
+           </label>
+           <p> Du kommer få bekräftelse för din bokning här</p>
+
+           <label for="extrainformation">
+            Extra
+            <textarea id="extrainformation"> </textarea>
+           </label>
+            <br>
+            <input type="submit" id="submit" name="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
