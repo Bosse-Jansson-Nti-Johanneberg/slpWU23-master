@@ -25,10 +25,12 @@ h2 {
 }
 
 
-/* Hamburger menu classes  (tagen från https://alvarotrigo.com/blog/hamburger-menu-css/)*/
+/* Hamburger menu  (tagen från https://alvarotrigo.com/blog/hamburger-menu-css/)*/
 
-ul{
-    
+.dropdownmenu{
+    background-color: rgb(227, 227, 227);
+    position: absolute;
+    z-index: -1;
 }
 .toggler{
       z-index:2;
@@ -102,8 +104,6 @@ ul{
       background: white;
       width: 0%;
       height: 100vh;
-        
-      transition: all 0.4s ease;
   }
     
   .toggler:checked ~ .menu{
@@ -284,6 +284,7 @@ header h1 {
     grid-area: certificate;
     width: fit-content;
     justify-self: center;
+    z-index: -1;
 }
 
 #pancakeimage {
@@ -388,6 +389,10 @@ a {
     align-items:center;
 }
 
+.aboutcard >p{
+    margin:1px;
+}
+
 #founders {
     text-align: center;
     grid-area: founders;
@@ -436,5 +441,21 @@ input {
 }
 
 .bookcontainer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:50vw;
+    height: 100vh;
     padding: 10px;
+    display:flex;
+    justify-content: flex-end;
+}
+form {
+    display: inline-block;
+}
+
+input{
+    border:black solid; 
+    width:100%;
+    margin:10px;
 }
