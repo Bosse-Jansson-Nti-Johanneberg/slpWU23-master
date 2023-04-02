@@ -25,6 +25,7 @@ h2 {
 }
 
 
+
 /* Hamburger menu  (tagen från https://alvarotrigo.com/blog/hamburger-menu-css/)*/
 
 .dropdownmenu{
@@ -164,10 +165,14 @@ h2 {
 }
 
 /* Main tags */
+
+article{
+    padding-left: 10px;
+}
 header {
     display:flex;
     z-index: 0;
-    width: 100vw;
+    width: 110vw;
     background-color: rgb(9, 13, 35);
     text-align: left;
     height: 10vh;
